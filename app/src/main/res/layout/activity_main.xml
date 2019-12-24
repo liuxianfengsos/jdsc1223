@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <include layout="@layout/toolbar"/>
+
+    </LinearLayout>
+    <include layout="@layout/lunbo"/>
+-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shouye_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_tab_home_normal"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Home" />
+        <RadioButton
+            android:id="@+id/search_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_tab_search_normal"
+            android:checked="true"
+            android:gravity="center"
+            android:text="search"
+            />
+        <RadioButton
+            android:id="@+id/more_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_tab_category_normal"
+            android:checked="true"
+            android:gravity="center"
+            android:text="more"
+            />
+
+        <RadioButton
+            android:id="@+id/cart_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_tab_cart_normal"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Cart"
+            />
+        <RadioButton
+            android:id="@+id/mine_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/main_bottom_tab_personal_normal"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Mine"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

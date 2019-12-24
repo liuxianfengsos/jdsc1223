@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:titleTextColor="#fff"
+    android:background="#b70707"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:orientation="vertical"
+    app:logo="@drawable/home_logo">
+    <ImageButton
+
+
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/search_box"
+        />
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#9e0404"
+        android:layout_marginLeft="35dp"
+        android:src="@drawable/android_search_button_icon"
+        />
+</android.support.v7.widget.Toolbar>
