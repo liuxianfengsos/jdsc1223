@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c70909"
+        android:orientation="vertical">
+        <!--<include layout="@layout/toolbar_search"/>-->
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/search_box"
+            android:layout_marginLeft="10dp"
+
+            android:padding="5dp"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:src="@drawable/search_box" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="搜索京东商品"/>
+
+        <ImageButton
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="35dp"
+            android:layout_height="28dp"
+            android:background="#9e0404"
+            android:layout_toRightOf="@id/search_box"
+            android:src="@drawable/android_search_button_icon" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/joy_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="暂无搜索历史"
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         //init fragment
         mFragments = new ArrayList<>(5);
         mFragments.add(HomeFragment.newInstance());
-        mFragments.add(BlankFragment.newInstance("查找"));
+        mFragments.add(SearchFragment.newInstance());
         mFragments.add(BlankFragment.newInstance("更多"));
         mFragments.add(BlankFragment.newInstance("购物车"));
         mFragments.add(BlankFragment.newInstance("我的"));
