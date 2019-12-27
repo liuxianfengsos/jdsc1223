@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/more_list_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_toRightOf="@id/more_list_iv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="家电111"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_toRightOf="@id/more_list_iv"
+        android:layout_below="@id/tv_1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="xxxxxxxxxxxxxx家电xxxxxxxxx"/>
+
+
+</RelativeLayout>

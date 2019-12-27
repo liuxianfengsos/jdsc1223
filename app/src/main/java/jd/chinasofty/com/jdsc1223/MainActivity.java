@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mFragments = new ArrayList<>(5);
         mFragments.add(HomeFragment.newInstance());
         mFragments.add(SearchFragment.newInstance());
-        mFragments.add(BlankFragment.newInstance("更多"));
+        mFragments.add(MoreFragment.newInstance());
         mFragments.add(BlankFragment.newInstance("购物车"));
         mFragments.add(BlankFragment.newInstance("我的"));
         //init view pager
