@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mFragments.add(HomeFragment.newInstance());
         mFragments.add(SearchFragment.newInstance());
         mFragments.add(MoreFragment.newInstance());
-        mFragments.add(BlankFragment.newInstance("购物车"));
+        mFragments.add(CartFragment.newInstance());
         mFragments.add(BlankFragment.newInstance("我的"));
         //init view pager
         mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(),mFragments);
