@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/android_layout_bg" >
+            <RelativeLayout
+                android:id="@+id/personal_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/android_title_bg">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="我的京东"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="更多"
+                    android:layout_marginTop="10dp"
+                    android:background="#a60808"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="300dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/android_layout_dl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_top_layout">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="-100dp"
+                    android:background="@drawable/my_personal_not_login_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欢迎来到京东"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#fff"
+                    />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="#fcfbfb"
+                    android:text="登陆"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/android_layout_ddzx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/android_layout_dl">
+                <TextView
+                    android:id="@+id/dd"
+                    android:layout_marginLeft="10dp"
+                    android:text="订单中心"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+                <LinearLayout style="@style/PersonalMainLayoutStyle"
+                    android:layout_below="@id/dd">
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_01"
+                            style="@style/PersonalIconStyle"
+                            android:layout_width="36dp"
+                            android:layout_height="38dp"
+                            android:src="@drawable/android_personel_quickly_order" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_01"
+                            android:text="订单状态速查" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_02"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_personel_waitpay_order" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_02"
+                            android:text="待付款订单" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_03"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_personel_all_order" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_03"
+                            android:text="全部订单" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/android_layout_zhzx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/android_layout_ddzx">
+                <TextView
+                    android:id="@+id/ddzx"
+                    style="@style/PersonalCenterText"
+                    android:text="账户中心" />
+
+                <LinearLayout style="@style/PersonalMainLayoutStyle"
+                    android:layout_below="@id/ddzx">
+
+                    <RelativeLayout style="@style/PersonalTopStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_04"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_collects" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_04"
+                            android:text="我的关注" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_05"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_discuss" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_05"
+                            android:text="商品评价/晒单" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_06"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_messages" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_06"
+                            android:text="消息中心" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_07"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_easy_buy" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_07"
+                            android:text="轻松购" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_08"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_account_safe" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_08"
+                            android:text="账户安全" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/android_layout_khfw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/android_layout_zhzx">
+                <TextView
+                    android:id="@+id/yhzx"
+                    style="@style/PersonalCenterText"
+                    android:text="@string/personal_customer_service" />
+
+                <LinearLayout style="@style/PersonalMainLayoutStyle"
+                    android:layout_below="@id/yhzx">
+
+                    <RelativeLayout
+                        style="@style/PersonalTopStyle"
+                        android:layout_marginBottom="10dp" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_09"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_return_repair" />
+
+                        <TextView
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_09"
+                            android:text="@string/personal_return_back" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                    <View style="@style/PersonalLine" />
+
+                    <RelativeLayout
+                        style="@style/PersonalBottomStyle"
+                        android:layout_marginBottom="10dp" >
+
+                        <ImageView
+                            android:id="@+id/personal_icon_10"
+                            style="@style/PersonalIconStyle"
+                            android:src="@drawable/android_my_jd_online_service" />
+
+                        <TextView
+                            android:id="@+id/personal_service"
+                            style="@style/PersonalTextStyle"
+                            android:layout_toRightOf="@id/personal_icon_10"
+                            android:text="@string/personal_infomation_service" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/personal_service"
+                            android:src="@drawable/color_shopping_new" />
+
+                        <ImageView
+                            style="@style/PersonalRightIconStyle"
+                            android:src="@drawable/android_list_idex" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/android_layout_khfw">
+                <Button
+                    android:id="@+id/personal_exit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/android_title_bg"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="推出登录"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</ScrollView>
